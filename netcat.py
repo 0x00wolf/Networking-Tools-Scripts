@@ -1,3 +1,5 @@
+# Credit to No Starch Press's, Blackhat Python, for the source code which I refactored.
+
 import argparse
 import socket
 import shlex
