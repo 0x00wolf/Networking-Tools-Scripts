@@ -11,7 +11,7 @@ API_KEY = "YOUR_API_KEY"
 
 # Input validation
 if len(sys.argv) == 1:
-    print('Usage: %s <search query>' % sys.argv[0])
+    print(f'Usage: {sys.argv[0]} <search query>')
     sys.exit(1)
 
 try:
@@ -26,5 +26,5 @@ try:
     for service in result['matches']:
         print(service['ip_str'])
 except Exception as e:
-    print('Error: %s' % e)
+    print(f'Error: {e}')
     sys.exit(1)
