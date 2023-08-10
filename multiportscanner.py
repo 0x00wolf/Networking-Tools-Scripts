@@ -70,14 +70,9 @@ def main():
     q.join()
 
     t2 = datetime.now()
-    total - t2 - t1
+    total = t2 - t1
     print("Port scan is completed in "+str(total))
     print("-" * 60)
-    print("nmap -p{ports} -sV -sC -T4 -Pn -oA {ip} {ip}".format(ports=",".join(discovered_ports), ip=target))
-    print("-" * 60)
-    nmap = "nmap -p{ports} -sV -sC -T4 -Pn -oA {ip} {ip}".format(ports=",".join(discovered_ports), ip=target)
-    t3 = datetime.now()
-    total = t3 - t1
 
     if __name__ == '__main__':
         try:
