@@ -71,7 +71,7 @@ def main():
 
     t2 = datetime.now()
     total = t2 - t1
-    print("Port scan is completed in "+str(total))
+    print(f"Port scan is completed in {total}")
     print("-" * 60)
 
     if __name__ == '__main__':
