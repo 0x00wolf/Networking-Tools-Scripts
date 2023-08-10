@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Credit to the Mayor
+# Credit to the Mayor for the source code.
 # https://github.com/dievus/threader3000
 
 import socket
