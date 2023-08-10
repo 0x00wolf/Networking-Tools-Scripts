@@ -3,13 +3,10 @@
 import ftplib
 
 server = input("FTP Server: ")
-
 user = input("username: ")
-
 PasswordList = input("Path to password list > ")
 
 try:
-
     with open(PasswordList, 'r') as pw:
         for word in pw:
             word = word.strip('r\n')
