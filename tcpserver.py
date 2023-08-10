@@ -11,14 +11,14 @@ s.bind((TCP_IP, TCP_PORT))
 s.listen(1)
 
 conn, addr = s.accept()
-print('Connection address: ', addr)
+print(f'Connection address: {addr}')
 
 while True:
 
     data=conn.recv(BUFFER_SIZE)
     if not data:
         break
-    print("Reived data: ", data)
+    print(f"Reived data: {data}")
     conn.send(data) # echo
 
 conn.close()
