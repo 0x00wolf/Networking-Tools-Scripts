@@ -24,7 +24,7 @@ def main():
     print("-" * 60)
     time.sleep(1)
     target = input("Enter the target IP or URL: ")
-    error = (">Invalid input.")
+    error = ">Invalid input."
     try:
         t_ip = socket.gethostbyname(target)
     except (UnboundLocalError, socket.gaierror):
