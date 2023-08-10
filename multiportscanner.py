@@ -1,14 +1,11 @@
 #!/usr/bin/python3
-# Credit to the Mayor for the source code.
+# Credit to the Mayor for the source code that I forked.
 # https://github.com/dievus/threader3000
 
 import socket
-import os
-import signal
 import time
 import threading
 import sys
-import subprocess
 from queue import Queue
 from datetime import datetime
 
@@ -36,7 +33,7 @@ def main():
 
     def portscan(port):
 
-        s = socket.socket(socker.AF_INET, socket.SOCK_STREAM)
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
         try:
             portx = s.connect((t_ip, port))
@@ -74,9 +71,9 @@ def main():
     print(f"Port scan is completed in {total}")
     print("-" * 60)
 
-    if __name__ == '__main__':
-        try:
-            main()
-        except KeyboardInterrupt:
-            print("Bon soir")
-            quit()
+if __name__ == '__main__':
+  try:
+      main()
+  except KeyboardInterrupt:
+      print("Bon soir")
+      quit()
